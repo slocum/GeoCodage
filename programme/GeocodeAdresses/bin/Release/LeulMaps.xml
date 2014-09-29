@@ -1,0 +1,20 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+LeulMaps
+</name>
+</assembly>
+<members>
+<member name="M:LeulMaps.Geocoder.GoogleGeocoder.GeoLocalisation(System.String,System.Byte,System.Int32,System.Int32,System.String)">
+	<summary>
+ Création d'une Static Maps API v2 Google
+ </summary>
+	<param name="padresse">Adresse postale de la carte à afficher</param>
+	<returns>Adresse URI de la carte à afficher</returns>
+	<remarks>
+ Créée le 05/11/2013 par : JF Enond
+ </remarks>
+</member>
+</members>
+</doc>

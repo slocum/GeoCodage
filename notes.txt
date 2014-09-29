@@ -1,0 +1,38 @@
+                        Web Services               Résultats
+Données Sources       Ex : Google APIs         Ex : Fichier XML ou JSon
+         |                   |                        |
+         |                   |                        |
+         V                   |                        V
+Adresses postales -------geocodeur---------> Positions GPS (lat. / long.)    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+http://maps.googleapis.com/maps/api/geocode/xml?address="Palais de l'Elysée 55, rue du faubourg Saint-Honoré 75008 Paris"&sensor=false
+http://maps.googleapis.com/maps/api/geocode/xml?address=%22Leul%20Menuiseries%20rue%20du%20petit%20ros%C3%A9%2079200%20LoUZY%22&sensor=false
+
+http://code.google.com/p/geocoding-net/ :
+	3 projets :

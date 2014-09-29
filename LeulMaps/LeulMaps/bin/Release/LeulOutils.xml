@@ -1,0 +1,1624 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+LeulOutils
+</name>
+</assembly>
+<members>
+<member name="M:LeulOutils.Parametres_Generaux.ActiviteFournisseurVitrage.Ajouter">
+	<summary>
+ Permet d'ajouter des données dans la table Fournisseurs_Vitrages_Activites
+ </summary>
+	<remarks>Créée le 09/03/2011 par Romain MARQUOIS</remarks>
+</member><member name="M:LeulOutils.Parametres_Generaux.ActiviteFournisseurVitrage.Modifier">
+	<summary>
+ Permet de modifier des données de la table Fournisseurs_Vitrages_Activites
+ </summary>
+	<remarks>Créée le 09/03/2011 par Romain MARQUOIS</remarks>
+</member><member name="M:LeulOutils.Parametres_Generaux.ActiviteFournisseurVitrage.Supprimer">
+	<summary>
+ Permet de supprimer des données de la table Fournisseurs_Vitrages_Activites
+ </summary>
+	<remarks>Créée le 10/03/2011 par Romain MARQUOIS</remarks>
+</member><member name="M:LeulOutils.Parametres_Generaux.ActiviteFournisseurVitrage.getIdActFour(System.Byte,System.Int32)">
+	<summary>
+ Permet de récupérer l'Id ActiviteFournisseurVitrage correspondant au libelle Activite et au nom Fournisseur passé en paramètre
+ </summary>
+	<param name="pstrActiviteId"></param>
+	<param name="pstrFournisseurId"></param>
+	<returns></returns>
+	<remarks>Créée le 16/03/2011 par Romain MARQUOIS</remarks>
+</member><member name="M:LeulOutils.Parametres_Generaux.ActiviteFournisseurVitrage.getListeInstances">
+	<summary>
+ Recupère la liste des activités des founisseurs vitrages
+ </summary>
+	<returns>
+ Une liste d'objet ActivitesFournisseursVitrages avec leurs données
+ Une liste d'objet vide en cas d'erreur
+ </returns>
+	<remarks>Créée le 07/03/2011 par Romain MARQUOIS</remarks>
+</member><member name="M:LeulOutils.Parametres_Generaux.ActiviteFournisseurVitrage.#ctor">
+	<summary>
+ Constructeur par défaut
+ </summary>
+	<remarks>Créé le 24/02/2011 par Romain MARQUOIS</remarks>
+</member><member name="M:LeulOutils.Parametres_Generaux.ActiviteFournisseurVitrage.#ctor(System.Int32,System.String,System.String,LeulOutils.Parametres_Generaux.Activites,LeulOutils.Parametres_Generaux.FournisseurVitrage)">
+	<summary>
+ Constructeur correspondant aux données de la table Fournisseurs_Vitrages_Activites
+ </summary>
+	<param name="pintID"></param>
+	<param name="pstrCodeClientLeul"></param>
+	<param name="pstrCodeClientUblo"></param>
+	<param name="poActivite"></param>
+	<param name="poFournisseur"></param>
+	<remarks>Créé le 24/01/2011 par Romain MARQUOIS</remarks>
+</member><member name="T:LeulOutils.Parametres_Generaux.ActiviteFournisseurVitrage">
+	<summary>
+ Classe qui permet de manipuler les données de la table Fournisseurs_Vitrages_Activites
+ </summary>
+	<remarks></remarks>
+</member><member name="M:LeulOutils.Parametres_Generaux.FournisseurVitrage.Ajouter">
+	<summary>
+ Permet d'ajouter des données dans la table Fournisseurs_Vitrages
+ </summary>
+	<remarks>Créée le 09/03/2011 par Romain MARQUOIS</remarks>
+</member><member name="M:LeulOutils.Parametres_Generaux.FournisseurVitrage.Modifier">
+	<summary>
+ Permet de modifier des données de la table Fournisseurs_Vitrages
+ </summary>
+	<remarks>Créée le 09/03/2011 par Romain MARQUOIS</remarks>
+</member><member name="M:LeulOutils.Parametres_Generaux.FournisseurVitrage.Supprimer">
+	<summary>
+ Permet de supprimer des données de la table Fournisseurs_Vitrages
+ </summary>
+	<remarks>Créée le 10/03/2011 par Romain MARQUOIS</remarks>
+</member><member name="M:LeulOutils.Parametres_Generaux.FournisseurVitrage.Verification_Suppression">
+	<summary>
+ Permet de vérifier si l'enregistrement en cours de suppression est référencé dans d'autres tables
+ </summary>
+	<returns></returns>
+	<remarks>Créée le 28/03/2011 par Romain MARQUOIS</remarks>
+</member><member name="M:LeulOutils.Parametres_Generaux.FournisseurVitrage.getInstance(System.String)">
+	<summary>
+ Permet de récupérer un objet FournisseurVitrage correspondant au nom Fournisseur passé en paramètre
+ </summary>
+	<param name="pstrFournisseurNom"></param>
+	<returns></returns>
+	<remarks>Créée le 16/03/2011 par Romain MARQUOIS</remarks>
+</member><member name="M:LeulOutils.Parametres_Generaux.FournisseurVitrage.getListeInstances">
+	<summary>
+ Récupère la liste des fournisseurs vitrages
+ </summary>
+	<returns>
+ Une liste d'objet FournisseursVitrages avec leurs données
+ Une liste d'objet vide en cas d'erreur
+ </returns>
+	<remarks>Créée le 08/03/2011 par Romain MARQUOIS</remarks>
+</member><member name="M:LeulOutils.Parametres_Generaux.FournisseurVitrage.#ctor">
+	<summary>
+ Constructeur par défaut
+ </summary>
+	<remarks>Créé le 24/02/2011 par Romain MARQUOIS</remarks>
+</member><member name="M:LeulOutils.Parametres_Generaux.FournisseurVitrage.#ctor(System.Int32,System.String,System.Boolean)">
+	<summary>
+ Constructeur correspondant aux données de la table Fournisseurs_Vitrages
+ </summary>
+	<param name="pintID"></param>
+	<param name="pstrNom"></param>
+	<param name="pblnForme"></param>
+	<remarks>Créé le 24/02/2011 par Romain MARQUOIS</remarks>
+</member><member name="T:LeulOutils.Parametres_Generaux.FournisseurVitrage">
+	<summary>
+ Classe qui permet de manipuler les données de la table Fournisseurs_Vitrages
+ </summary>
+	<remarks></remarks>
+</member><member name="M:LeulOutils.Parametres_Generaux.LivraisonPoids.Ajouter">
+	<summary>
+ Permet d'ajouter des données dans la table Livraisons_Poids
+ </summary>
+	<remarks>Créée le 09/03/2011 par Romain MARQUOIS</remarks>
+</member><member name="M:LeulOutils.Parametres_Generaux.LivraisonPoids.Modifier">
+	<summary>
+ Permet de modifier des données de la table Livraisons_Poids
+ </summary>
+	<remarks>Créée le 09/03/2011 par Romain MARQUOIS</remarks>
+</member><member name="M:LeulOutils.Parametres_Generaux.LivraisonPoids.Supprimer">
+	<summary>
+ Permet de supprimer des données de la table Livraisons_Poids
+ </summary>
+	<remarks>Créée le 10/03/2011 par Romain MARQUOIS</remarks>
+</member><member name="M:LeulOutils.Parametres_Generaux.LivraisonPoids.getListeInstances">
+	<summary>
+ Recupère la liste des livraisons
+ </summary>
+	<returns>
+ Une liste d'objet LivraisonsPoids avec leurs données
+ Une liste d'objet vide en cas d'erreur
+ </returns>
+	<remarks>Créée le 08/03/2011 par Romain MARQUOIS</remarks>
+</member><member name="M:LeulOutils.Parametres_Generaux.LivraisonPoids.#ctor">
+	<summary>
+ Constructeur par défaut
+ </summary>
+	<remarks>Créé le 24/02/2011 par Romain MARQUOIS</remarks>
+</member><member name="M:LeulOutils.Parametres_Generaux.LivraisonPoids.#ctor(System.String,System.Int32,System.String,System.String,System.Decimal,System.String)">
+	<summary>
+ Constructeur correspondant aux données de la table Livraisons_Poids
+ </summary>
+	<param name="pstrTable"></param>
+	<param name="pintCodeElement"></param>
+	<param name="pstrCodeProduit"></param>
+	<param name="pstrDesignation"></param>
+	<param name="pdecPoids"></param>
+	<param name="pstrCommentaires"></param>
+	<remarks>Créé le 24/02/2011 par Romain MARQUOIS</remarks>
+</member><member name="M:LeulOutils.Parametres_Generaux.ModeEnvoiDoc.getInstance(System.Int32)">
+	<summary>
+ Recherche et renvoie le Mode Envoi Doc  du code passé en paramètre
+ </summary>
+	<param name="pModeEnvoiDocID">Code du ModeEnvoiDoc recherché</param>
+	<returns>ModeEnvoiDoc trouvé</returns>
+	<remarks>
+ Créée le 12/12/2011 par : Jean-François Enond
+ </remarks>
+</member><member name="M:LeulOutils.DroitsUtilisateurs.DU.Utilisateur.estAutorisePourAppli(System.String)">
+	<summary>
+ Vérifie si l'utilisateur est autorisé à utiliser l'application
+ </summary>
+	<param name="pApplicationNom">Application à vérifier</param>
+	<returns>Retourne True si l'utilisateur est autorisé, sinon False</returns>
+	<remarks>
+ Créée le 27/05/2013 par : JF Enond
+ </remarks>
+</member><member name="M:LeulOutils.DroitsUtilisateurs.DU.Utilisateur.estAutorisePourMenu(System.String)">
+	<summary>
+ Vérifie si l'utilisateur est autorisé à ouvrir le menu
+ </summary>
+	<param name="pMenu">Nom du menu</param>
+	<returns>Retourne True si l'utilisateur est autorisé, sinon False</returns>
+	<remarks>
+ Créée le 27/05/2013 par : JF Enond
+ </remarks>
+</member><member name="M:LeulOutils.Parametres_Generaux.Forme.Ajouter">
+	<summary>
+ Permet d'ajouter des données dans la table Formes
+ </summary>
+	<remarks>Créée le 09/03/2011 par Romain MARQUOIS</remarks>
+</member><member name="M:LeulOutils.Parametres_Generaux.Forme.Modifier">
+	<summary>
+ Permet de modifier des données de la table Formes
+ </summary>
+	<remarks>Créée le 09/03/2011 par Romain MARQUOIS</remarks>
+</member><member name="M:LeulOutils.Parametres_Generaux.Forme.Supprimer">
+	<summary>
+ Permet de supprimer des données de la table Formes
+ </summary>
+	<remarks>Créée le 10/03/2011 par Romain MARQUOIS</remarks>
+</member><member name="M:LeulOutils.Parametres_Generaux.Forme.getListeInstances">
+	<summary>
+ Recupère la liste des formes
+ </summary>
+	<returns>
+ Une liste d'objet Formes avec leurs données
+ Une liste d'objet vide en cas d'erreur
+ </returns>
+	<remarks>Créée le 08/03/2011 par Romain MARQUOIS</remarks>
+</member><member name="M:LeulOutils.Parametres_Generaux.Forme.#ctor">
+	<summary>
+ Constructeur par défaut
+ </summary>
+	<remarks>Créé le 24/02/2011 par Romain MARQUOIS</remarks>
+</member><member name="M:LeulOutils.Parametres_Generaux.Forme.#ctor(System.Byte,System.String,System.Boolean)">
+	<summary>
+ Constructeur correspondant aux données de la table Formes
+ </summary>
+	<param name="pbytCode"></param>
+	<param name="pstrLibelle"></param>
+	<param name="pblnImprimee"></param>
+	<remarks>Créé le 24/02/2011 par Romain MARQUOIS</remarks>
+</member><member name="M:LeulOutils.AccesDonnees.ConnexionBDD.demarrerTransaction">
+	<summary>
+ Démarre une transaction avec la connexion en-cours.
+ </summary>
+	<remarks>
+ Créée le 10/07/2013 par : J-François Enond
+ </remarks>
+</member><member name="M:LeulOutils.AccesDonnees.ConnexionBDD.arreterTransaction">
+	<summary>
+ Arrête une transaction avec la connexion en-cours.
+ </summary>
+	<remarks>
+ Créée le 10/07/2013 par : J-François Enond
+ </remarks>
+</member><member name="M:LeulOutils.AccesDonnees.ConnexionBDD.annulerTransaction">
+	<summary>
+ Annule une transaction avec la connexion en-cours.
+ </summary>
+	<remarks>
+ Créée le 10/07/2013 par : J-François Enond
+ </remarks>
+</member><member name="M:LeulOutils.AccesDonnees.ConnexionBDD.fermer">
+	<summary>
+ Ferme la connexion en-cours.
+ </summary>
+	<remarks>
+ Créée le 09/07/2013 par : J-François Enond
+ </remarks>
+</member><member name="M:LeulOutils.Outils.AdresseInfos.#ctor(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String)">
+	<summary>
+ Constructeur correspondants à certaines informations de la table Societes
+ </summary>
+	<param name="pstrNom"></param>
+	<param name="pstrPrenom"></param>
+	<param name="pstrRue1"></param>
+	<param name="pstrRue2"></param>
+	<param name="pstrRue3"></param>
+	<param name="pstrCodePostal"></param>
+	<param name="pstrVille"></param>
+	<param name="pstrPays"></param>
+	<param name="pstrTel"></param>
+	<param name="pstrFax"></param>
+	<param name="pstrEmail"></param>
+	<remarks>Créé le 08/03/2011 par Romain MARQUOIS</remarks>
+</member><member name="T:LeulOutils.Outils.AdresseInfos">
+	<summary>
+ Classe qui gère une adresse.
+ </summary>
+	<remarks>
+ Créée le 30/10/2010 par : Jean-François Enond
+ </remarks>
+</member><member name="F:LeulOutils.Parametres_Generaux.CouleurIntercalaire._SystemePlaxe">
+	<summary>
+ Indique si on travaille avec un système d'une gamme PVC Plaxé
+ </summary>
+	<remarks>
+ Créée le 29/08/2011 par : Jean-Franois Enond
+ </remarks>
+</member><member name="F:LeulOutils.Parametres_Generaux.CouleurIntercalaire._ID">
+	<summary>
+ ID
+ </summary>
+	<remarks>Créé le 23/02/2011 par Romain MARQUOIS</remarks>
+</member><member name="M:LeulOutils.Parametres_Generaux.CouleurIntercalaire.GetIntercalaireCouleur(LeulOutils.Outils.LeulOutils.eActivite,System.String,System.String,System.Boolean)">
+	<summary>
+ Récupère la couleur de l'intercalaire du châssis passé en paramètre.
+ </summary>
+	<param name="pActiviteCode">Code de l'activité</param>
+	<param name="pChassisCouleur">Couleur du châssis</param>
+	<param name="pSystemCode">Code du système</param>
+	<returns>Retourne la couleur de l'intercalaire</returns>
+	<remarks>
+ Créée le 23/04/2009 par : Jean-François Enond
+ Modifiée le 14/04/2010 par : Jean-François Enond - Couleur intercalaire = System code + chassis couleur
+ Modifiée le 29/08/2011 par : Jean-François Enond  - Ajout du paramètre pSystemPaxe pour savoir si on travaille avec une gemme PVC Plaxé
+ </remarks>
+</member><member name="M:LeulOutils.Parametres_Generaux.CouleurIntercalaire.getRALdelaCouleur(System.Int32,System.String)">
+	<summary>
+ Vérifie et retourne la valeur du RAL de la couleur et pour l'acitivité passées en paramètres
+ </summary>
+	<param name="pintActiviteCode">Code de l'activité à vérifier</param>
+	<param name="pstrCouleur">Couleur à vérifier</param>
+	<returns>Si 0, aucun RAL trouvé, sinon code du RAL trouvé</returns>
+	<remarks>
+ Créée le 30/07/2012 par : JF François
+ </remarks>
+</member><member name="M:LeulOutils.Parametres_Generaux.CouleurIntercalaire.Ajouter">
+	<summary>
+ Permet d'ajouter des données dans la table Couleurs_Intercalaires
+ </summary>
+	<remarks>Créée le 09/03/2011 par Romain MARQUOIS</remarks>
+</member><member name="M:LeulOutils.Parametres_Generaux.CouleurIntercalaire.Modifier">
+	<summary>
+ Permet de modifier des données de la table Couleurs_Intercalaires
+ </summary>
+	<remarks>Créée le 09/03/2011 par Romain MARQUOIS</remarks>
+</member><member name="M:LeulOutils.Parametres_Generaux.CouleurIntercalaire.Supprimer">
+	<summary>
+ Permet de supprimer des données de la table Couleurs_Intercalaires
+ </summary>
+	<remarks>Créée le 10/03/2011 par Romain MARQUOIS</remarks>
+</member><member name="M:LeulOutils.Parametres_Generaux.CouleurIntercalaire.Verification_Suppression">
+	<summary>
+ Permet de vérifier si l'enregistrement en cours de suppression est référencé dans d'autres tables
+ </summary>
+	<returns></returns>
+	<remarks>Créée le 28/03/2011 par Romain MARQUOIS</remarks>
+</member><member name="M:LeulOutils.Parametres_Generaux.CouleurIntercalaire.getLibelleCouleur(System.Int32)">
+	<summary>
+ Retourne le libelle Couleur correspondant à l'ID passé en paramètre
+ </summary>
+	<param name="pintId"></param>
+	<remarks>Créée le 14/03/2011 par Romain MARQUOIS</remarks>
+</member><member name="M:LeulOutils.Parametres_Generaux.CouleurIntercalaire.getListeInstances">
+	<summary>
+ Récupère une liste de couleurs
+ </summary>
+	<returns>
+ Une liste d'objet CouleurIntercalaire avec leurs données
+ Une liste d'objet vide en cas d'erreur
+ </returns>
+	<remarks>Créée le 08/03/2011 par Romain MARQUOIS</remarks>
+</member><member name="M:LeulOutils.Parametres_Generaux.CouleurIntercalaire.#ctor">
+	<summary>
+ Constructeur par défaut 
+ </summary>
+	<remarks>Créé le 24/02/2011 par Romain MARQUOIS</remarks>
+</member><member name="M:LeulOutils.Parametres_Generaux.CouleurIntercalaire.#ctor(System.Int32,System.String)">
+	<summary>
+ Constructeur correspondant aux données de la table Couleurs_Intercalaires
+ </summary>
+	<param name="pintID"></param>
+	<param name="pstrIntercalaireCouleur"></param>
+	<remarks>Créé le 23/02/2011 par Romain MARQUOIS</remarks>
+</member><member name="T:LeulOutils.Parametres_Generaux.CouleurIntercalaire">
+	<summary>
+ Cette classe permet de gérer et manipuler les données de la table [Couleurs_Intercalaires] de la base [Parametres_Généraux]
+ </summary>
+	<remarks>
+ Créée le 23/04/2009 par : Jean-François Enond
+ </remarks>
+</member><member name="M:LeulOutils.Outils.Parametre.lireSectionConfigApp(System.String)">
+	<summary>
+	</summary>
+	<param name="pNomSection"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:LeulOutils.Outils.Parametre.lireChaineConnexion(System.String)">
+	<summary>
+	</summary>
+	<param name="pNomSection"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:LeulOutils.Outils.Parametre.CBoolConfig(System.String)">
+	<summary>
+ Convertit les notions booléennes (oui/non, vrai/faux, true/false, en une valeur vb boolean.
+ </summary>
+	<param name="pValeur">Valeur à convertir</param>
+	<returns>Valeur booléenne convertie</returns>
+	<remarks>
+ Créée le 05/09/2013 par : JF Enond
+ </remarks>
+</member><member name="M:LeulOutils.Parametres_Generaux.Preparateurs.getListePreparateurs(System.Byte)">
+	<summary>
+ Crée la liste des préparateurs affichables.
+ </summary>
+	<param name="pbytActiviteCode">Activité des préparateurs à lister</param>
+	<returns>Retourne une liste de préparateurs</returns>
+	<remarks>
+ Créée le 16/06/2009 par : Jean-François Enond
+ </remarks>
+</member><member name="M:LeulOutils.Parametres_Generaux.Preparateurs.getPreparateur(System.Byte,System.Int32)">
+	<summary>
+ Récupère le préparateur dont le code a été passé en paramètre.
+ </summary>
+	<param name="pbytActiviteCode">Code de l'activité</param>
+	<param name="pintPreparateurID">Code du préparateur à rechercher</param>
+	<returns>Le préparateur trouvé</returns>
+	<remarks>
+ Créée le 03/09/2010 par : Jean-François Enond
+ </remarks>
+</member><member name="M:LeulOutils.Parametres_Generaux.Preparateurs.Ajouter">
+	<summary>
+ Permet d'ajouter des données dans la table Preparateurs
+ </summary>
+	<remarks>Créée le 09/03/2011 par Romain MARQUOIS</remarks>
+</member><member name="M:LeulOutils.Parametres_Generaux.Preparateurs.Modifier">
+	<summary>
+ Permet de modifier des données de la table Preparateurs
+ </summary>
+	<remarks>Créée le 09/03/2011 par Romain MARQUOIS</remarks>
+</member><member name="M:LeulOutils.Parametres_Generaux.Preparateurs.Supprimer">
+	<summary>
+ Permet de supprimer des données de la table Preparateurs
+ </summary>
+	<remarks>Créée le 10/03/2011 par Romain MARQUOIS</remarks>
+</member><member name="M:LeulOutils.Parametres_Generaux.Preparateurs.getListeInstances">
+	<summary>
+ Récupère une liste de préparateurs
+ </summary>
+	<returns>
+ Une liste d'objet Preparateurs avec leurs données
+ Une liste d'objet vide en cas d'erreur
+ </returns>
+	<remarks>Créée le 08/03/2011 par Romain MARQUOIS</remarks>
+</member><member name="M:LeulOutils.Parametres_Generaux.Preparateurs.#ctor(System.Int32,System.String,System.Boolean,System.Byte)">
+	<summary>
+ Constructeur correspondant aux données de la table Preparateurs
+ </summary>
+	<param name="pintID"></param>
+	<param name="pstrNom"></param>
+	<param name="pblnAffichage"></param>
+	<param name="pbytActiviteCode"></param>
+	<remarks>Crée le 23/02/2011 par Romain MARQUOIS</remarks>
+</member><member name="T:LeulOutils.Parametres_Generaux.Preparateurs">
+	<summary>
+ Cette classe permet de manipuler les données de la table [Preparateurs] de la base [Parametres_Generaux]
+ </summary>
+	<remarks>
+ Créée le 04/06/2009 par : Jean-François Enond
+ </remarks>
+</member><member name="F:LeulOutils.Parametres_Generaux.VitrageNonFournis._ID">
+	<summary>
+ ID
+ </summary>
+	<remarks>Créé le 24/02/2011 par Romain MARQUOIS</remarks>
+</member><member name="M:LeulOutils.Parametres_Generaux.VitrageNonFournis.getListeVitrageNonFournis(System.Byte)">
+	<summary>
+ Permet de créer la liste des vitrages non fournis par le founisseur passé en paramètre.
+ </summary>
+	<param name="pbytActiviteCode">Code de l'activité</param>
+	<returns>Retoune une liste des vitrages non fournis</returns>
+	<remarks>
+ Créée le 18/05/2009 par : Jean-François Enond
+ </remarks>
+</member><member name="M:LeulOutils.Parametres_Generaux.VitrageNonFournis.Vitrage_Non_Fournis(System.Int16,System.String)">
+	<summary>
+ Permet de recherher si le vitrage n'est fournis par le fournis
+ </summary>
+	<param name="pshtFournisseur">Code du fournisseur</param>
+	<param name="pstrVitrageCode">Code du vitrage</param>
+	<returns>
+ Retourne True si le vitrage n'est pas fournis par le fournisseur
+ </returns>
+	<remarks>
+ Créée le 18/05/2009 par : Jean-François Enond
+ </remarks>
+</member><member name="M:LeulOutils.Parametres_Generaux.VitrageNonFournis.Ajouter">
+	<summary>
+ Permet d'ajouter des données dans la table Vitrages_Non_Fournis
+ </summary>
+	<remarks>Créée le 08/03/2011 par Romain MARQUOIS</remarks>
+</member><member name="M:LeulOutils.Parametres_Generaux.VitrageNonFournis.Modifier">
+	<summary>
+ Permet de modifier des données de la table Vitrages_Non_Fournis
+ </summary>
+	<remarks>Créée le 10/03/2011 par Romain MARQUOIS</remarks>
+</member><member name="M:LeulOutils.Parametres_Generaux.VitrageNonFournis.Supprimer">
+	<summary>
+ Permet de supprimer des données de la table Vitrages_Non_Fournis
+ </summary>
+	<remarks>Créée le 10/03/2011 par Romain MARQUOIS</remarks>
+</member><member name="M:LeulOutils.Parametres_Generaux.VitrageNonFournis.getListeInstances">
+	<summary>
+ Récupère la liste des vitrages non fournis
+ </summary>
+	<returns>
+ Une liste d'objet VitrageNonFournis avec leurs données
+ Une liste d'objet vide en cas d'erreur
+ </returns>
+	<remarks>Créée le 09/03/2011 par Romain MARQUOIS</remarks>
+</member><member name="M:LeulOutils.Parametres_Generaux.VitrageNonFournis.#ctor(System.Int32,System.String,System.Byte,System.Int16)">
+	<summary>
+ Constructeur correspondant aux données de la table Vitrages_Non_Fournis
+ </summary>
+	<param name="pintID"></param>
+	<param name="pstrVitrageCode"></param>
+	<param name="pbytActiviteCode"></param>
+	<param name="pshtFournisseurID"></param>
+	<remarks>Créé le 24/02/2011 par Romain MARQUOIS</remarks>
+</member><member name="T:LeulOutils.Parametres_Generaux.VitrageNonFournis">
+	<summary>
+ Cette classe permet de manipuler les données de la table [Vitrages_Non_Fournis] de la base [Parametres_Generaux]
+ </summary>
+	<remarks>
+ Créée le 18/05/2009 par : Jean-François Enond
+ </remarks>
+</member><member name="F:LeulOutils.Fenetres.AppLeul._name">
+	<summary>
+ Nom de l'application
+ </summary>
+</member><member name="F:LeulOutils.Fenetres.AppLeul._version">
+	<summary>
+ Version de l'application
+ </summary>
+</member><member name="F:LeulOutils.Fenetres.AppLeul._Chemin">
+	<summary>
+ Chemin du dossier de l'application + nomApplication.exe
+ </summary>
+</member><member name="F:LeulOutils.Fenetres.AppLeul._sessionID">
+	<summary>
+ Numéro de session pour différencier les différents TSE sur lesquels sont exécutés l'application
+ </summary>
+</member><member name="M:LeulOutils.Fenetres.AppLeul.Start(System.Boolean,System.Boolean)">
+	<summary>
+ Démarre l'applicaton - A appeler dans la procédure Sub Main()
+ </summary>
+	<param name="pSessionUnique">Indique si l'application doit être exécutée une seule fois. Optionel - Par défaut=False</param>
+	<param name="pControleDroitUtilisateur">Oblige ou pas à contrôler des droits de l'utilisateur</param>
+	<returns>True si l'application s'exécute correctement, sinon False</returns>
+	<remarks>
+ Créée le 24/04/2013 par : JF Enond 
+ </remarks>
+</member><member name="M:LeulOutils.Fenetres.AppLeul.AProposDe">
+	<summary>
+ Affiche la fenêtre d'A propos de.
+ </summary>
+	<remarks>
+ Créée le 24/04/2013 par : JF Enond 
+ </remarks>
+</member><member name="M:LeulOutils.Fenetres.AppLeul.checkAutorisationMenu">
+	<summary>
+ Contrôle des menus autorisés
+ </summary>
+	<remarks>
+ Créée le 05/06/2013 par : JF Enond
+ </remarks>
+</member><member name="M:LeulOutils.Fenetres.AppLeul.ouvrirFormulaire(System.Windows.Forms.Form@,System.Boolean)">
+	<summary>
+ Permet d'ouvrir un formulaire, en contrôlant les autorisations de l'utilisateur si s'est demandé
+ </summary>
+	<param name="pFrm">Formulaire à ouvrrir</param>
+	<param name="pControleDroitUtilisateur">Controle ou pas les autorisations de l'utilisateur</param>
+	<returns>Retourn e Cancel si l'utilisateur l'est pas autorisé à ouvrir ce formulaire</returns>
+	<remarks>
+ Créée le 24/04/2013 par : JF Enond 
+ </remarks>
+</member><member name="M:LeulOutils.Fenetres.AppLeul.Arret">
+	<summary>
+ Arrête l'exécution de l'application
+ </summary>
+	<remarks>
+ Créée le 24/04/2013 par : JF Enond 
+ </remarks>
+</member><member name="M:LeulOutils.Fenetres.AppLeul.initAttributs">
+	<summary>
+ Initialise les attributs
+ </summary>
+	<remarks>
+ Créée le 24/04/2013 par : JF Enond 
+ </remarks>
+</member><member name="M:LeulOutils.Fenetres.AppLeul.estUtilisateurAutorise(System.Windows.Forms.Form@)">
+	<summary>
+ Vérifie les droits de l'utilisateur.
+ </summary>
+	<returns>True si l'utilisateur est autorisé pour cette application ; Sinon False</returns>
+	<remarks>
+ Créée le 24/04/2013 par : JF Enond 
+ </remarks>
+</member><member name="M:LeulOutils.Fenetres.AppLeul.estEnCoursExecution">
+	<summary>
+ Vérifie si l'application est déjà en cours d'exécution.
+ </summary>
+	<returns>True si déjà exécutée ; Sinon False</returns>
+	<remarks>
+ Créée le 24/04/2013 par : JF Enond 
+ </remarks>
+</member><member name="M:LeulOutils.Fenetres.AppLeul.GestionDesMenus(System.Windows.Forms.ToolStripItemCollection)">
+	<summary>
+ Parcours tous les éléments du Menu principal.
+ </summary>
+	<param name="items">Collection des menus à parcourir</param>
+	<remarks>
+ Créée le 24/04/2013 par : JF Enond
+ </remarks>
+</member><member name="M:LeulOutils.Fenetres.AppLeul.ouvrir">
+	<summary>
+ Ouvre les premières fenêtres de l'application - frmMain et frmSplash
+ </summary>
+	<returns>True si l'ouverture se passe bien ; Sinon False</returns>
+	<remarks>
+ Créée le 24/04/2013 par : JF Enond 
+ </remarks>
+</member><member name="M:LeulOutils.Fenetres.AppLeul.desactiverMenusNonAutorises(System.Windows.Forms.ToolStripMenuItem@)">
+	<summary>
+ Désactive les menus non autorisés pour l'utilisateur en cours.
+ </summary>
+	<param name="pMenu">Elément menu</param>
+	<remarks>
+ Créée le 24/04/2013 par : JF Enond
+ </remarks>
+</member><member name="T:LeulOutils.Fenetres.AppLeul">
+	<summary>
+ Gère le démarrage et les infos des applications Leul.
+ </summary>
+	<remarks>
+ Créée le 16/04/2013 par : JF Enond
+ </remarks>
+</member><member name="M:LeulOutils.Outils.LeulOutils.msgAvertissement(System.String)">
+	<summary>
+ Permet d'afficher un message d'avertissement.
+ </summary>
+	<param name="pstrMessage">Message à afficher</param>
+	<returns>cette procédre renvoie FALSE</returns>
+	<remarks>
+ Créée le 13/12/2007 par : Jean-François Enond
+ </remarks>
+</member><member name="M:LeulOutils.Outils.LeulOutils.msgQuestion(System.String)">
+	<summary>
+ Permet d'afficher un messagebox de type question standardisé
+ </summary>
+	<param name="pstrMessage">Message et question  à afficher</param>
+	<returns>
+ DialogResult.Yes : Quand l'utilisateur clique sur Oui
+ DialogResult.No : Quand l'utilisateur clique sur Non
+ </returns>
+	<remarks>
+ Créée le 12/10/2010 par : Jean-François Enond
+ </remarks>
+</member><member name="M:LeulOutils.Outils.LeulOutils.msgErreur(System.Exception@,System.String)">
+	<summary>
+ Affiche un message d'erreur à l'écran et l'écrit dans le fichier Log.txt
+ La source de l'erreurt peut être passée en paramètre.
+ </summary>
+	<param name="pErreur">l'exception en cours</param>
+	<param name="pstrSource">Nom de la procédure où s'est produite l'exception</param>
+	<returns>Return false dans tous les cas</returns>
+	<remarks>
+ Créée le 13/12/2007 par : Jean-François ENOND
+ Modifiée le 22/09/2010 par : J-F Enond - Ajout de l'écriture de l'erreur dans le fichier Log.txt
+ </remarks>
+</member><member name="M:LeulOutils.Outils.LeulOutils.msgErreur(System.Exception@)">
+	<summary>
+ Affiche le message d'erreur à l'écran  et l'écrit dans le fichier Log.txt
+ </summary>
+	<param name="pErreur">L'exception à afficher à l'écran</param>
+	<returns>Dans tous les cas, retourne faux</returns>
+	<remarks>
+ Créée le 22/09/2010 par : Jean-François Enond
+ </remarks>
+</member><member name="M:LeulOutils.Outils.LeulOutils.msgErreur(System.Exception@,System.Boolean)">
+	<summary>
+ Affiche le message d'erreur à l'écran  et l'écrit dans le fichier Log.txt
+ </summary>
+	<param name="pErreur">L'exception à afficher à l'écran</param>
+	<returns>Dans tous les cas, retourne faux</returns>
+	<remarks>
+ Créée le 22/09/2010 par : Jean-François Enond
+ </remarks>
+</member><member name="M:LeulOutils.Outils.LeulOutils.msgErreur(System.Exception@,System.String,System.Boolean)">
+	<summary>
+ Affiche le message d'erreur à l'écran seulement si l'utilisateur le demande et 
+ dans tous les cas, le message est écrit dans le fichier Log.Txt
+ </summary>
+	<param name="pErreur">L'exception à afficher à l'écran</param>
+	<returns>Dans tous les cas, retourne faux</returns>
+	<remarks>
+ Créée le 22/09/2010 par : Jean-François Enond
+ </remarks>
+</member><member name="M:LeulOutils.Outils.LeulOutils.LoggerMessage(System.String)">
+	<summary>
+ Ecrit dans un fichier texte nommé Log.txt le message passé en paramètre.
+ </summary>
+	<param name="pMessage">Message à enregistrer dans le fichier Log.text</param>
+	<remarks>
+ Créée le 31/08/2010 par : Jean-François Enond
+ </remarks>
+</member><member name="M:LeulOutils.Outils.LeulOutils.ZIP_CdeCde(System.String)">
+	<summary>
+ Permet de supprimer les 0 entre le premier caractère et le numéro de commande.
+ </summary>
+	<param name="pstrCdeCode">Numéro de commande complet.</param>
+	<returns>Numéro de commande sans les 0.</returns>
+	<remarks>
+ Créée le 20/07/2004 par : Nourisson Jerome
+ Modifiée le 17/04/2009 par : Jean-François Enond - Passage en VB 2005
+ </remarks>
+</member><member name="M:LeulOutils.Outils.LeulOutils.extend_CdeCde(System.String)">
+ summary
+ Formate un code de commande simplifié
+ summary
+ param name=pstrCommandeCodeCode simple de la commandeparam
+ returns
+ Le code formaté ou  si  erreur
+ returns
+ remarks
+ Créee le 10092009 par Guillaume GADOR
+ Modifiée le 26102009 par Guillaume GADOR  Prise en charge des Code Commande SAV
+ Modifiée le 22/01/2010 par : Céline Barbarit - remplacement du 'startswith' par le 'substring'remarks
+
+</member><member name="M:LeulOutils.Outils.LeulOutils.Droite(System.String,System.Byte,System.Char)">
+	<summary>
+ Permet de formater une valeur texte de la longueur souhaitée.
+ </summary>
+	<param name="pstrValeur">Valeur à formater</param>
+	<param name="pbytNbreCaracteres">Longueur de la valeur</param>
+	<param name="pstrCaractère">Charactère de remplissage</param>
+	<returns>Retourne la valeur formatée</returns>
+	<remarks>
+ Créée le 14/05/2009 par : Jean-François Enond
+ </remarks>
+</member><member name="M:LeulOutils.Outils.LeulOutils.Gauche(System.String,System.Byte,System.Char)">
+	<summary>
+ Cadre un texte à gauche de sa zone en remplissant la partie restante par des espaces.
+ </summary>
+	<param name="pstrValeur">Texte à cadrer à gauche</param>
+	<param name="pbytNbreCaracteres">Longueur de la zone à remplir</param>
+	<param name="pstrCaractère">Caractère de remplissage</param>
+	<returns>Retourne le texte avec le nombre de caractère de remplissage nécessaire</returns>
+	<remarks>
+ Modifiée le 30/08/2010 par : Jean-François Enond - Ajout du Throw
+ </remarks>
+</member><member name="M:LeulOutils.Outils.LeulOutils.estEntierPositif(System.String)">
+	<summary>
+ Permet de vérifier si la valeur passée en paramètre est un nombre entier positif.
+ </summary>
+	<param name="pstrValue">Valeur à vérifier</param>
+	<returns>Retoune vrai si la valeur passée est un nombre entier positif.</returns>
+	<remarks>
+ Créée le 28/05/2009 par : Jean-François Enond
+ </remarks>
+</member><member name="M:LeulOutils.Outils.LeulOutils.estHeure(System.String)">
+	<summary>
+ Permet de vérifier sui la valeur passée en paramèree est du format heure "HH:mn"
+ </summary>
+	<param name="pstrValue">Heure à vérifier</param>
+	<returns>Retourne vraie si la valeur passée en paramètre est au bon format.</returns>
+	<remarks>
+ Créée le 28/05/2009 par : Jean-François Enond
+ </remarks>
+</member><member name="M:LeulOutils.Outils.LeulOutils.estSemaine(System.String)">
+	<summary>
+ Permet de vérifier la validiter d'une semaine.
+ </summary>
+	<param name="pstrValue">Semaine au format SS/AAAA</param>
+	<returns>Retourne true si la semaine est correcte.</returns>
+	<remarks>
+ Créée le 23/03/2004 par : Jean-François ENOND
+ Modifiée le 07/04/2009 par : Céline Barbarit - La semaine est dorénavant au format SS/AAAA
+ </remarks>
+</member><member name="M:LeulOutils.Outils.LeulOutils.estDate(System.String)">
+	<summary>
+ Permet de vérifier si une date est au format JJ/MM/AAAA
+ </summary>
+	<param name="pstrDate">Date à vérifier</param>
+	<returns>Retourne true si le format de la date est correcte.</returns>
+	<remarks>
+ Créée le 31/03/2008 par : Jean-François Enond 
+ Modifiée le 28/05/2009 par : Jean-François Enond
+ </remarks>
+</member><member name="M:LeulOutils.Outils.LeulOutils.setSemaine(System.DateTime)">
+	<summary>
+ Cette procédure permet de rechercher le numéro de semaine de la date passée en paramètre.
+ </summary>
+	<param name="dat">Date dans la semaine cherchée</param>
+	<returns>Numéro de semaine de la date passée en paramètre</returns>
+	<remarks>
+ Créée le 29/11/2004 par : L.Longre - http://frederic.sigonneau.free.fr/Calendriers.htm
+ Modifiée le 10/03/2005 par : Vivien Ripoche
+ Modifiée le 26/02/2010 par : Céline Barbarit</remarks>
+</member><member name="M:LeulOutils.Outils.LeulOutils.setFocus(System.Windows.Forms.Control@)">
+	<summary>
+ Envoie le focus sur le contrôle passé en paramètre et sélectionne son contenu.
+ </summary>
+	<param name="pCtrl">Contrôle à sélectionner</param>
+	<returns>Retourn True si la sélection s'est bien passé.</returns>
+	<remarks>
+ Créée le 12/06/2009 par : Jean-François Enond
+ </remarks>
+</member><member name="M:LeulOutils.Outils.LeulOutils.CNullStr(System.Object@)">
+	<summary>
+ Permet de transformer une valeur Null en valeur vide string.
+ </summary>
+	<param name="pValue">Valeur à transformer</param>
+	<returns>Valeur transformée</returns>
+	<remarks>
+ Modifiée le 02/07/2010 par : Jean-François Enond
+ </remarks>
+</member><member name="M:LeulOutils.Outils.LeulOutils.formaterNumeroFax(System.String)">
+	<summary>
+ Supprime les points dans le numéro des fax
+ </summary>
+	<param name="pValue">Numéro du fax</param>
+	<returns>Numéro du fax sans les points</returns>
+	<remarks>
+ Créée le 21/12/2011 par : Jean-François Enond 
+ </remarks>
+</member><member name="M:LeulOutils.Outils.LeulOutils.getStringCnxActivite(LeulOutils.Outils.LeulOutils.eActivite)">
+	<summary>
+ Retourne le nom de la section de la chaine de connexion de l'activité passée en paramètre
+ </summary>
+	<returns>Nom de la section du fichier config</returns>
+	<remarks>
+ Créée le 16/03/2012 par : Jean-François Enond
+ </remarks>
+</member><member name="M:LeulOutils.Outils.LeulOutils.getStringCnxProduction(LeulOutils.Outils.LeulOutils.eActivite)">
+	<summary>
+ Retourne le nom de la section de la chaine de connexion de l'activité passée en paramètre
+ </summary>
+	<returns>Nom de la section du fichier config</returns>
+	<remarks>
+ Créée le 21/03/2012 par : Céline BEY
+ </remarks>
+</member><member name="M:LeulOutils.Parametres_Generaux.CodeTableWinpro.GetInstanceID(System.String,System.String)">
+	<summary>
+ Permet de trouver l'ID de la table en fonction de la table Winpro 
+ </summary>
+	<param name="pstrBase"></param>
+	<returns></returns>
+	<remarks>Créée le 08/11/2010 par : Céline Barbarit</remarks>
+</member><member name="M:LeulOutils.Parametres_Generaux.CodeTableWinpro.GetInstanceNomTable(System.Int32,System.String)">
+	<summary>
+ Permet de trouver le nom de la table en fonction de l'identifiant
+ </summary>
+	<param name="pstrBase"></param>
+	<returns></returns>
+	<remarks>Créée le 22/11/2010 par : Céline Barbarit</remarks>
+</member><member name="M:LeulOutils.Parametres_Generaux.CodeTableWinpro.Ajouter">
+	<summary>
+ Permet d'ajouter des données dans la table Codes_Tables_Winpro
+ </summary>
+	<remarks>Créée le 09/03/2011 par Romain MARQUOIS</remarks>
+</member><member name="M:LeulOutils.Parametres_Generaux.CodeTableWinpro.Modifier">
+	<summary>
+ Permet de modifier des données de la table Codes_Tables_Winpro
+ </summary>
+	<remarks>Créée le 09/03/2011 par Romain MARQUOIS</remarks>
+</member><member name="M:LeulOutils.Parametres_Generaux.CodeTableWinpro.Supprimer">
+	<summary>
+ Permet de supprimer des données de la table Codes_Tables_Winpro
+ </summary>
+	<remarks>Créée le 10/03/2011 par Romain MARQUOIS</remarks>
+</member><member name="M:LeulOutils.Parametres_Generaux.CodeTableWinpro.getListeInstances">
+	<summary>
+ Recupère la liste des codes table WinPro
+ </summary>
+	<returns>
+ Une liste d'objet CodeTableWinpro avec leurs données
+ Une liste d'objet vide en cas d'erreur
+ </returns>
+	<remarks>Créée le 08/03/2011 par Romain MARQUOIS</remarks>
+</member><member name="M:LeulOutils.Parametres_Generaux.CodeTableWinpro.#ctor">
+	<summary>
+ Constructeur par défaut
+ </summary>
+	<remarks>Créé le 24/02/2011 par Romain MARQUOIS</remarks>
+</member><member name="M:LeulOutils.Parametres_Generaux.CodeTableWinpro.#ctor(System.Int32,System.String)">
+	<summary>
+ Constructeur correspondant aux données de la table Codes_Tables_Winpro
+ </summary>
+	<param name="pintID"></param>
+	<param name="pstrLibelle"></param>
+	<remarks>Créé le 24/02/2011 par Romain MARQUOIS</remarks>
+</member><member name="M:LeulOutils.Parametres_Generaux.QuestionWinpro.Ajouter">
+	<summary>
+ Permet d'ajouter des données dans la table Questions_Winpro
+ </summary>
+	<remarks>Créée le 09/03/2011 par Romain MARQUOIS</remarks>
+</member><member name="M:LeulOutils.Parametres_Generaux.QuestionWinpro.Modifier">
+	<summary>
+ Permet de modifier des données de la table Questions_Winpro
+ </summary>
+	<remarks>Créée le 09/03/2011 par Romain MARQUOIS</remarks>
+</member><member name="M:LeulOutils.Parametres_Generaux.QuestionWinpro.Supprimer">
+	<summary>
+ Permet de supprimer des données de la table Questions_Winpro
+ </summary>
+	<remarks>Créée le 10/03/2011 par Romain MARQUOIS</remarks>
+</member><member name="M:LeulOutils.Parametres_Generaux.QuestionWinpro.getCompteurQuestion(LeulOutils.Parametres_Generaux.QuestionWinpro)">
+	<summary>
+ Permet de récupérer le Compteur QuestionWinPro correspondant à l'instance QuestionWinpro passée en paramètre
+ </summary>
+	<param name="poQuestion"></param>
+	<returns></returns>
+	<remarks>Créée le 22/03/2011 par Romain MARQUOIS</remarks>
+</member><member name="M:LeulOutils.Parametres_Generaux.QuestionWinpro.getListeInstances">
+	<summary>
+ Recupère la liste des questions WinPro
+ </summary>
+	<returns>
+ Une liste d'objet QuestionsWinPro avec leurs données
+ Une liste d'objet vide en cas d'erreur
+ </returns>
+	<remarks>Créée le 08/03/2011 par Romain MARQUOIS</remarks>
+</member><member name="M:LeulOutils.Parametres_Generaux.QuestionWinpro.#ctor">
+	<summary>
+ Constructeur par défaut
+ </summary>
+	<remarks>Créé le 24/02/2011 par Romain MARQUOIS</remarks>
+</member><member name="M:LeulOutils.Parametres_Generaux.QuestionWinpro.#ctor(System.Int32,System.Char,System.String,System.String,System.String,System.Int32,System.String,System.String,System.String,System.String,LeulOutils.Parametres_Generaux.Activites)">
+	<summary>
+ Constructeur correspondant aux données de la table Questions_Winpro
+ </summary>
+	<param name="pintCompteur"></param>
+	<param name="pchrSection"></param>
+	<param name="pstrType"></param>
+	<param name="pstrQuestion"></param>
+	<param name="pstrChampQuestion"></param>
+	<param name="pintChampNum"></param>
+	<param name="pstrChampReponse"></param>
+	<param name="pstrReponseWP"></param>
+	<param name="pstrTypeReponse"></param>
+	<param name="pstrCritereInfo2"></param>
+	<param name="poActivite"></param>
+	<remarks>Créé le 24/02/2011 par Romain MARQUOIS</remarks>
+</member><member name="M:LeulOutils.Parametres_Generaux.MetaDatas.GetValeur(System.Byte,System.String)">
+	<summary>
+ Récupère la valeur correspondant à la section passée en paramètre.
+ </summary>
+	<param name="pActiviteCode">Code de l'activité</param>
+	<param name="pSection">Couleur du châssis</param>
+	<returns>Retourne la valeur</returns>
+	<remarks>
+ Créée le 24/08/2011 par : Céline Barbarit
+ Modifiée le 28/08/2011 par : Jean-François Enond - Renvoi du champ Valeur
+ </remarks>
+</member><member name="M:LeulOutils.Parametres_Generaux.MetaDatas.GetValeur(System.String)">
+	<summary>
+ Récupère la valeur correspondant à la section passée en paramètre.
+ </summary>
+	<param name="pSection">Couleur du châssis</param>
+	<returns>Retourne la valeur</returns>
+	<remarks>
+ Créée le 30/08/2011 par : Céline Barbarit
+ </remarks>
+</member><member name="M:LeulOutils.Parametres_Generaux.MetaDatas.GetListValeur(System.Byte,System.String)">
+	<summary>
+ Récupère la liste du champ "valeur" correspondant à la section passée en paramètre.
+ </summary>
+	<param name="pActiviteCode">Code de l'activité</param>
+	<param name="pSection">Couleur du châssis</param>
+	<returns>Retourne la valeur</returns>
+	<remarks>
+ Créée le 03/05/2011 par : Céline Bey</remarks>
+</member><member name="T:LeulOutils.Parametres_Generaux.MetaDatas">
+	<summary>
+ Cette classe permet de gérer et manipuler les données de la table [Meta_Datas] de la base [Parametres_Généraux]
+ </summary>
+	<remarks>
+ Créée le 24/08/2009 par : Céline Barbarit
+ </remarks>
+</member><member name="F:LeulOutils.Parametres_Generaux.Societes._ListeActivites">
+	<summary>
+ Liste d'objets Activites
+ </summary>
+	<remarks>Créée le 23/02/2011 par Romain MARQUOIS</remarks>
+</member><member name="M:LeulOutils.Parametres_Generaux.Societes.Ajouter">
+	<summary>
+ Permet d'ajouter des données dans la table Societes
+ </summary>
+	<remarks>Créée le 09/03/2011 par Romain MARQUOIS</remarks>
+</member><member name="M:LeulOutils.Parametres_Generaux.Societes.Modifier">
+	<summary>
+ Permet de modifier des données de la table Societes
+ </summary>
+	<remarks>Créée le 09/03/2011 par Romain MARQUOIS</remarks>
+</member><member name="M:LeulOutils.Parametres_Generaux.Societes.Supprimer">
+	<summary>
+ Permet de supprimer des données de la table Societes
+ </summary>
+	<remarks>Créée le 10/03/2011 par Romain MARQUOIS</remarks>
+</member><member name="M:LeulOutils.Parametres_Generaux.Societes.getListeSociete">
+	<summary>
+ Récupère la liste des sociétés et les activités correspondantes
+ </summary>
+	<returns>
+ Une liste d'objet Societes avec leurs données ainsi que la ou les instances d'Activites correspondantes
+ Une liste d'objet vide en cas d'erreur
+ </returns>
+	<remarks>Créée le 08/03/2011 par Romain MARQUOIS</remarks>
+</member><member name="M:LeulOutils.Parametres_Generaux.Societes.#ctor">
+	<summary>
+ Constructeur de la classe Societes
+ </summary>
+	<remarks>
+ Créée le 02/06/2010 par Guillaume GADOR
+ </remarks>
+</member><member name="M:LeulOutils.Parametres_Generaux.Societes.#ctor(System.Int32,System.String,LeulOutils.Outils.AdresseInfos,System.Int32,System.String,System.Collections.Generic.List{LeulOutils.Parametres_Generaux.Activites})">
+	<summary>
+ Constructeur correspondant aux données de la table Societes
+ </summary>
+	<param name="pintID"></param>
+	<param name="pstrNom"></param>
+	<param name="poAdresse1"></param>
+	<param name="pintCouleur"></param>
+	<param name="pstrTVACE"></param>
+	<param name="plstoListeActivites"></param>
+	<remarks>Crée le 23/02/2011 par Romain MARQUOIS</remarks>
+</member><member name="M:LeulOutils.Fenetres.frmAbout.AfficherCacher_InfosSystem">
+	<summary>
+ Affiche ou cache les infos du système
+ </summary>
+	<remarks>
+ Créée le 09/10/2010 par : Jean-François Enond
+ </remarks>
+</member><member name="M:LeulOutils.Fenetres.frmAbout.Affiche_Config_Appli">
+	<summary>
+ Affiche les infos du fichier de configuration de l'application
+ </summary>
+	<remarks>
+ Créée le 12/10/2010 par : Jean-François Enond
+ </remarks>
+</member><member name="M:LeulOutils.Fenetres.frmModeleSplash.Traitement">
+	<summary>
+ Liste des traitements effectués pendant l'exécution du Splash.
+ Cette procédure doit être réécrite dans l'objet qui a hérité de cette classe.
+ </summary>
+	<remarks>
+ Créée le 26/08/2010 par : Jean-François Enond
+ </remarks>
+</member><member name="M:LeulOutils.Parametres_Generaux.Correspondances_Systemes_Gammes.GetInstanceGamme(System.Int16,System.String,System.String)">
+	<summary>
+ Permet de récuper la gamme d'une activité et d'un système donné
+ </summary>
+	<param name="pshtActiviteCode">Code de l'activité</param>
+	<param name="pstrSystemeCode">Code du système</param>
+	<param name="pstrBase">Nom de la base de données de la gestion de production</param>
+	<returns>La correspondance Système/Gamme</returns>
+	<remarks>
+ Créée le 09/04/2009 par : Céline Barbarit
+ Modifiée le 21/01/2010 par : Céline Barbarit - Modification de la connexion
+ </remarks>
+</member><member name="M:LeulOutils.Parametres_Generaux.Correspondances_Systemes_Gammes.Ajouter">
+	<summary>
+ Permet d'ajouter des données dans la table Correspondances_Systemes_Gammes 
+ </summary>
+	<remarks>Créée le 09/03/2011 par Romain MARQUOIS</remarks>
+</member><member name="M:LeulOutils.Parametres_Generaux.Correspondances_Systemes_Gammes.Modifier">
+	<summary>
+ Permet de modifier des données de la table Correspondances_Systemes_Gammes
+ </summary>
+	<remarks>Créée le 09/03/2011 par Romain MARQUOIS</remarks>
+</member><member name="M:LeulOutils.Parametres_Generaux.Correspondances_Systemes_Gammes.Supprimer">
+	<summary>
+ Permet de supprimer des données de la table Correspondances_Systemes_Gammes
+ </summary>
+	<remarks>Créée le 10/03/2011 par Romain MARQUOIS</remarks>
+</member><member name="M:LeulOutils.Parametres_Generaux.Correspondances_Systemes_Gammes.getListeInstances">
+	<summary>
+ Récupère la liste des correspondances systemes 
+ </summary>
+	<returns>
+ Une liste d'objet Correspondances_Systemes_Gammes avec leurs données
+ Une liste d'objet vide en cas d'erreur
+ </returns>
+	<remarks>Créée le 08/03/2011 par Romain MARQUOIS</remarks>
+</member><member name="M:LeulOutils.Parametres_Generaux.Correspondances_Systemes_Gammes.#ctor(System.Int32,System.String,System.String,System.Boolean,System.Int16)">
+	<summary>
+ Constructeur correspondant aux données de la table Correspondances_Systemes_Gammes
+ </summary>
+	<param name="pintCorrespondancesID"></param>
+	<param name="pstrSystemeCode"></param>
+	<param name="pstrGammeCode"></param>
+	<param name="pblnCertification"></param>
+	<param name="pshtActiviteCode"></param>
+	<remarks>Crée le 23/02/2011 par Romain MARQUOIS</remarks>
+</member><member name="M:LeulOutils.Parametres_Generaux.SystemesTris.Ajouter">
+	<summary>
+ Permet d'ajouter des données dans la table Systemes_Tris
+ </summary>
+	<remarks>Créée le 07/11/2011 par Alexandre THOMAS</remarks>
+</member><member name="M:LeulOutils.Parametres_Generaux.SystemesTris.Modifier">
+	<summary>
+ Permet de modifier des données de la table Systemes_Tris
+ </summary>
+	<remarks>Créée le 07/11/2011 par Alexandre THOMAS</remarks>
+</member><member name="M:LeulOutils.Parametres_Generaux.SystemesTris.Supprimer">
+	<summary>
+ Permet de supprimer des données de la table Systemes_Tris
+ </summary>
+	<remarks>Créée le 07/11/2011 par Alexandre THOMAS</remarks>
+</member><member name="M:LeulOutils.Parametres_Generaux.SystemesTris.getListeInstances">
+	<summary>
+ Récupère une liste de couleurs
+ </summary>
+	<returns>
+ Une liste d'objet CouleurIntercalaire avec leurs données
+ Une liste d'objet vide en cas d'erreur
+ </returns>
+	<remarks>Créée le 07/11/2011 par Alexandre THOMAS</remarks>
+</member><member name="M:LeulOutils.Parametres_Generaux.SystemesTris.getLibelleSystemeTri(System.Int32)">
+	<summary>
+ Récuperation du libelle SystemeTri correspondant à l'ID passé en paramètre
+ </summary>
+	<param name="pintId"></param>
+	<returns>
+ une chaîne de caractere 
+ </returns>
+	<remarks>Créée le 07/11/2011 par Alexandre THOMAS</remarks>
+</member><member name="M:LeulOutils.Parametres_Generaux.SystemesTris.Verification_Suppression">
+	<summary>
+ Permet de vérifier si l'enregistrement en cours de suppression est référencé dans d'autres tables
+ </summary>
+	<returns></returns>
+	<remarks>Créée le 08/11/2011 par Alexandre THOMAS</remarks>
+</member><member name="M:LeulOutils.Parametres_Generaux.SystemesTris.#ctor">
+	<summary>
+ Constructeur par défaut 
+ </summary>
+	<remarks>Créé le 07/11/2011 par Alexandre THOMAS</remarks>
+</member><member name="M:LeulOutils.Parametres_Generaux.SystemesTris.#ctor(System.Int32,System.String)">
+	<summary>
+ Constructeur correspondant aux données de la table SystemesTris
+ </summary>
+	<param name="pintID"></param>
+	<param name="pstrSystemeCodeTris"></param>
+	<remarks>Créé le 07/11/2011 par Alexandre THOMAS</remarks>
+</member><member name="T:LeulOutils.Parametres_Generaux.SystemesTris">
+	<summary>
+ Cette classe permet de gérer et manipuler les données de la table [Systemes_tris] de la base [Parametres_Généraux]
+ </summary>
+	<remarks>
+ Créée le 07/11/2011 par : Alexandre THOMAS
+ </remarks>
+</member><member name="M:LeulOutils.Outils.Email.envoyerEmail(System.Boolean)">
+	<summary>
+ Fonction à utiliser. Envoyer_Mail() est obsolète.
+ Permet d'envoyer des mails.
+ </summary>
+	<returns>TRUE si l'envoi réussi</returns>
+	<remarks>
+ Créée le 22/06/2012 par : JF François
+ </remarks>
+</member><member name="M:LeulOutils.Outils.Email.Envoyer_Email">
+	<summary>
+ Permet d'envoyé un Email avec les informations contenu dans l'objet
+ </summary>
+	<returns>
+ True si le mail est envoyé 
+ False si l'envoi à échoué
+ </returns>
+	<remarks>
+ Créée le 28/10/2009 par Guillaume GADOR
+ </remarks>
+</member><member name="M:LeulOutils.Outils.Email.Ajout_Piece_Jointe(System.String,System.String)">
+	<summary>
+ Permet d'ajouter une pièce jointe dans l'Email
+ </summary>
+	<param name="pstrCheminDossierPiecesJointes">Chemin du dossier contenant les pièces jointes</param>
+	<param name="pstrNomFichierPieceJointes">Nom du fichier dans le dossier</param>
+	<returns>
+ True si le fichier existe une fois celui ci intégré dans l'objet Email
+ False si le fichier n'existe pas
+ </returns>
+	<remarks>
+ Créee le 02/11/2009 par Guillaume GADOR
+ </remarks>
+</member><member name="M:LeulOutils.Outils.Email.integrerImage(System.String,System.String,System.String)">
+	<summary>
+ Incorpore une image dans le corps du message.
+ </summary>
+	<param name="pBody">Message du mail</param>
+	<param name="pAdresseImageAIncorporer">Image à incorporer</param>
+	<returns>True si succès</returns>
+	<remarks>
+ Créée le 19/01/2012 par : Jean-François Enond
+ </remarks>
+</member><member name="M:LeulOutils.Outils.Email.Verification_Adresse_Mail(System.String)">
+	<summary>
+ Permet de vérifier que le format d'une adresse mail est valide
+ Attention : Ne verifie pas que l'adresse existe !
+ </summary>
+	<param name="pAdresseMail">Adresse mail à verifier</param>
+	<returns>
+ True si l'adresse est correct
+ False si l'adresses est incorrect
+ </returns>
+	<remarks>
+ Créee le 02/11/2009 par guillaume GADOR
+ </remarks>
+</member><member name="M:LeulOutils.Outils.Email.Verification_Serveur_SMTP(System.String)">
+	<summary>
+ Permet de vérifier le format de l'adresses du serveur SMTP
+ Attention : ne verifie pas qu'un serveur existe à cette adresse !
+ </summary>
+	<param name="pstrServeur_SMTP">Adresse du serveur SMTP</param>
+	<returns>
+ True si l'adresse est correct
+ False si  le format de l'adresses est incorrect
+ </returns>
+	<remarks>
+ Créee le 02/11/2009 par Guillaume GADOR
+ </remarks>
+</member><member name="M:LeulOutils.Outils.Email.setAdresseDestinataire(System.String)">
+	<summary>
+ Permet de récupérer les infos des destinataires pour l'envoi du mail
+ </summary>
+	<param name="pstrAdresseDestinataire">Chaine representant une liste de destinataire separer par un ;</param>
+	<remarks>
+ Créee le 02/11/2009 par guillaume GADOR
+ </remarks>
+</member><member name="M:LeulOutils.Outils.Email.setAdresseExpediteur(System.Net.Mail.MailAddress)">
+	<summary>
+ Permet de formater une chaine representant l'adresse de l'expediteur
+ </summary>
+	<param name="pAdresseExpediteur">Adresse de l'expediteur</param>
+	<remarks>
+ Créee le 02/11/2009 par guillaume GADOR
+ Modifiée le 22/06/2012 par : JF Enond - Modification du type du paramètre.
+ </remarks>
+</member><member name="M:LeulOutils.Outils.Email.#ctor(LeulOutils.Outils.Email.ServeurSMTP@,System.Net.Mail.MailAddress@,System.String,System.String,System.String)">
+	<summary>
+ Consructeur à toujours utiliser. Les autres son obsolètes.
+ </summary>
+	<param name="pServeurSMTP">Informations du serveur SMTP</param>
+	<param name="pExpediteur">Inhformations de l'expéditeur</param>
+	<param name="pDestinataireMail">Adresse du destinataire</param>
+	<param name="pstrSujet">Sujet du mail</param>
+	<param name="pstrMessage">Message du mail</param>
+	<remarks>
+ Créée le 22/06/2012 par : JF Enond
+ </remarks>
+</member><member name="M:LeulOutils.Parametres_Generaux.ColonneInfo.Ajouter">
+	<summary>
+ Permet d'ajouter des données dans la table Colonnes_Infos
+ </summary>
+	<remarks>Créée le 09/03/2011 par Romain MARQUOIS</remarks>
+</member><member name="M:LeulOutils.Parametres_Generaux.ColonneInfo.Modifier">
+	<summary>
+ Permet de modifier des données de la table Colonnes_Infos
+ </summary>
+	<remarks>Créée le 09/03/2011 par Romain MARQUOIS</remarks>
+</member><member name="M:LeulOutils.Parametres_Generaux.ColonneInfo.Supprimer">
+	<summary>
+ Permet de supprimer des données de la table Colonnes_Infos
+ </summary>
+	<remarks>Créée le 10/03/2011 par Romain MARQUOIS</remarks>
+</member><member name="M:LeulOutils.Parametres_Generaux.ColonneInfo.Verification_Suppression">
+	<summary>
+ Permet de vérifier si l'enregistrement en cours de suppression est référencé dans d'autres tables
+ </summary>
+	<returns></returns>
+	<remarks>Créée le 28/03/2011 par Romain MARQUOIS</remarks>
+</member><member name="M:LeulOutils.Parametres_Generaux.ColonneInfo.getListeInstances">
+	<summary>
+ Récupère la liste des colonnes info
+ </summary>
+	<returns>
+ Une liste d'objet ColonnesInfo avec leurs données
+ Une liste d'objet vide en cas d'erreur
+ </returns>
+	<remarks>Créée le 08/03/2011 par Romain MARQUOIS</remarks>
+</member><member name="M:LeulOutils.Parametres_Generaux.ColonneInfo.getLibelleColonneInfo(System.Int32)">
+	<summary>
+ Retourne le libelle ColonneInfo correspondant à l'ID passé en paramètre
+ </summary>
+	<param name="pintId"></param>
+	<remarks>Créée le 14/03/2011 par Romain MARQUOIS</remarks>
+</member><member name="M:LeulOutils.Parametres_Generaux.ColonneInfo.#ctor">
+	<summary>
+ Construteur par défaut
+ </summary>
+	<remarks>Créé le 24/02/2011 par Romain MARQUOIS</remarks>
+</member><member name="M:LeulOutils.Parametres_Generaux.ColonneInfo.#ctor(System.Int32,System.Byte,System.String,LeulOutils.Parametres_Generaux.Activites)">
+	<summary>
+ Constructeur correspondant aux données de la table Colonnes_Infos
+ </summary>
+	<param name="pintID"></param>
+	<param name="pbytNum"></param>
+	<param name="pstrLibelle"></param>
+	<param name="poActivite"></param>
+	<remarks>Créé le 24/02/2011 par Romain MARQUOIS</remarks>
+</member><member name="T:LeulOutils.Parametres_Generaux.ColonneInfo">
+	<summary>
+ Classe qui permet de manipuler les données de la table Colonnes_Infos
+ </summary>
+	<remarks>Créée le 23/02/2011 par Romain MARQUOIS</remarks>
+</member><member name="M:LeulOutils.Parametres_Generaux.SystemeLancement.Ajouter">
+	<summary>
+ Permet d'ajouter des données dans la table Systemes_Lancements
+ </summary>
+	<remarks>Créée le 10/03/2011 par Romain MARQUOIS</remarks>
+</member><member name="M:LeulOutils.Parametres_Generaux.SystemeLancement.Modifier">
+	<summary>
+ Permet de modifier des données de la table Systemes_Lancements
+ </summary>
+	<remarks>Créée le 10/03/2011 par Romain MARQUOIS</remarks>
+</member><member name="M:LeulOutils.Parametres_Generaux.SystemeLancement.Supprimer">
+	<summary>
+ Permet de supprimer des données de la table Systemes_Lancements
+ </summary>
+	<remarks>Créée le 10/03/2011 par Romain MARQUOIS</remarks>
+</member><member name="M:LeulOutils.Parametres_Generaux.SystemeLancement.Verification_Suppression">
+	<summary>
+ Permet de vérifier si l'enregistrement en cours de suppression est référencé dans d'autres tables
+ </summary>
+	<returns></returns>
+	<remarks>Créée le 28/03/2011 par Romain MARQUOIS</remarks>
+</member><member name="M:LeulOutils.Parametres_Generaux.SystemeLancement.getLibelleSystLancement(System.Int32)">
+	<summary>
+ Retourne le libelle SystemeLancement correspondant à l'ID passé en paramètre
+ </summary>
+	<param name="pintId"></param>
+	<remarks>Créée le 21/03/2011 par Romain MARQUOIS</remarks>
+</member><member name="M:LeulOutils.Parametres_Generaux.SystemeLancement.getListeInstances">
+	<summary>
+ Récupère la liste des systemes lancements
+ </summary>
+	<returns>
+ Une liste d'objet SystemesLancements avec leurs données
+ Une liste d'objet vide en cas d'erreur
+ </returns>
+	<remarks>Créée le 08/03/2011 par Romain MARQUOIS</remarks>
+</member><member name="M:LeulOutils.Parametres_Generaux.SystemeLancement.#ctor">
+	<summary>
+ Constructeur par défaut
+ </summary>
+	<remarks>Créé le 24/02/2011 par Romain MARQUOIS</remarks>
+</member><member name="M:LeulOutils.Parametres_Generaux.SystemeLancement.#ctor(System.Int32,System.String)">
+	<summary>
+ Constructeur correspondant aux données de la table Systemes_Lancements
+ </summary>
+	<param name="pintID"></param>
+	<param name="pstrCode"></param>
+	<remarks>Créé le 24/02/2011 par Romain MARQUOIS</remarks>
+</member><member name="T:LeulOutils.Parametres_Generaux.SystemeLancement">
+	<summary>
+ Classe qui permet de manipuler les données de la table Systemes_Lancements
+ </summary>
+	<remarks>Créée le 24/02/2011 par Romain MARQUOIS</remarks>
+</member><member name="M:LeulOutils.AccesDonnees.DonneeBDD.SQL_Boolean(System.Boolean)">
+	<summary>
+ Renvoie une valeur booléenne pour les requêtes SQL
+ </summary>
+	<param name="pValue">Valeur booléenne à convertir</param>
+	<returns>Valeur string de la valeur booléenne</returns>
+	<remarks>
+ Créée le 18/10/2010 par : Jean-Françoois Enond
+ </remarks>
+</member><member name="M:LeulOutils.AccesDonnees.DonneeBDD.CDBNull(System.Data.Common.DbDataReader@,System.String,LeulOutils.AccesDonnees.eTypeData)">
+	<summary>
+ Convertit un champ Null en string
+ </summary>
+	<param name="pReader">référence sur le DataReader à vérifier</param>
+	<param name="pNomChamp">Nom du champ à vérifier</param>
+	<returns>Retourne string.empty si la valeur testée est null</returns>
+	<remarks>
+ Créée le 14/03/2013 par : JF Enond
+ </remarks>
+</member><member name="M:LeulOutils.AccesDonnees.DonneeBDD.DblCote(System.String)">
+	<summary>
+ Permet de remplacer les cotes par des espaces pour éviter
+ </summary>
+	<param name="pChaine">Chaine à modifier</param>
+	<returns>Chaine modifiée</returns>
+	<remarks>
+ Créée le 14/06/2013 par : JF enond
+ </remarks>
+</member><member name="M:LeulOutils.AccesDonnees.DonneeBDD.addParametre(System.String,System.Object)">
+	<summary>
+ Ajout de paramètres à la Commande SQL
+ </summary>
+	<param name="pParametre">Nom du paramètre</param>
+	<param name="pObjet">Valeur du paramètre</param>
+	<remarks>
+ Créée le 27/05/2013 par : JF Enond
+ </remarks>
+</member><member name="M:LeulOutils.AccesDonnees.DonneeBDD.executerSelection">
+	<summary>
+ Exécute une requête de sélection.
+ </summary>
+	<remarks>
+ Créée le 27/05/2013 par : JF Enond
+ </remarks>
+</member><member name="M:LeulOutils.AccesDonnees.DonneeBDD.executerAction">
+	<summary>
+ Exécute une requête d'action.
+ </summary>
+	<returns>Nombre d'enregistrements modifiés</returns>
+	<remarks>
+ Créée le 27/05/2013 par : JF Enond
+ </remarks>
+</member><member name="M:LeulOutils.AccesDonnees.DonneeBDD.lire">
+	<summary>
+ Lire les enregistrements d'un Recordset.
+ </summary>
+	<returns>Retourne false si on est à la fin de la liste des ernregistrements.</returns>
+	<remarks>
+ Créée le 06/06/2013 par : JF Enond
+ </remarks>
+</member><member name="M:LeulOutils.AccesDonnees.DonneeBDD.RecordSet(System.String,LeulOutils.AccesDonnees.eTypeData)">
+	<summary>
+ Permet de retrouver la valeur du champ d'un enregistrement.
+ </summary>
+	<param name="pChamp">Nom du champ dont on veut connaître la valeur</param>
+	<returns>Valeur du champ</returns>
+	<remarks>
+ Créée le 06/06/2013 par : JF Enond
+ </remarks>
+</member><member name="M:LeulOutils.AccesDonnees.DonneeBDD.fermer">
+	<summary>
+ Ferme tous les éléments ouverts avec un objet DonneeBDD
+ </summary>
+	<remarks>
+ Créée le 12/07/2013 par : JF Enond
+ </remarks>
+</member><member name="M:LeulOutils.AccesDonnees.DonneeBDD.fermerRecordset">
+	<summary>
+ Ferme tous le recordset ouverts avec un objet DonneeBDD
+ </summary>
+	<remarks>
+ Créée le 12/07/2013 par : JF Enond
+ </remarks>
+</member><member name="M:LeulOutils.AccesDonnees.DonneeBDD.creerCommand">
+	<summary>
+ Crée et met à jour une commande SQL avec la propriété Requçete SQL
+ </summary>
+	<remarks>
+ Créée le 10/07/2013 par : J-François
+ </remarks>
+</member><member name="M:LeulOutils.Outils.Imprime.getPeripheriqueSortie(System.String)">
+	<summary>
+ Renvoie sur quel matériel sera édité l'imprimé
+ </summary>
+	<remarks>
+ Créée le 18/02/2013 par : JF Enond
+ </remarks>
+</member><member name="M:LeulOutils.Outils.Imprime.imprimerDocument">
+	<summary>
+ Permet de lancer l'impression d'un document.
+ </summary>
+	<remarks>
+ Creee le 19/02/2013 par : JF Enond
+ </remarks>
+</member><member name="P:LeulOutils.My.Resources.Resources.ResourceManager">
+	<summary>
+  Retourne l'instance ResourceManager mise en cache utilisée par cette classe.
+</summary>
+</member><member name="P:LeulOutils.My.Resources.Resources.Culture">
+	<summary>
+  Remplace la propriété CurrentUICulture du thread actuel pour toutes
+  les recherches de ressources à l'aide de cette classe de ressource fortement typée.
+</summary>
+</member><member name="T:LeulOutils.My.Resources.Resources">
+	<summary>
+  Une classe de ressource fortement typée destinée, entre autres, à la consultation des chaînes localisées.
+</summary>
+</member><member name="M:LeulOutils.Parametres_Generaux.Activites.getActiviteLibelle(System.Byte)">
+	<summary>
+ Renvoie le libellé du code activité passé en paramètre.
+ </summary>
+	<param name="pbytActiviteCode">Code de l'activité</param>
+	<returns>Libellé de l'activité</returns>
+	<remarks>
+ Créée le 02/09/2010 par : Jean-François Enond (MAJ du cartouche)
+ Modifiée le 02/09/2010 par : JF Enond - Utilisation du paramètre ActiviteCode dans la requête
+ </remarks>
+</member><member name="M:LeulOutils.Parametres_Generaux.Activites.getInstance(System.String)">
+	<summary>
+ Retourne une instance d'Activites en fonction du Libelle Activites passé en paramètre
+ </summary>
+	<param name="pstrActiviteLibelle"></param>
+	<returns></returns>
+	<remarks>Créée le 21/03/2011 par Romain MARQUOIS</remarks>
+</member><member name="M:LeulOutils.Parametres_Generaux.Activites.getInstance(LeulOutils.Outils.LeulOutils.eActivite)">
+	<summary>
+ Retourne une instance d'Activites en fonction du code d'activites passé en paramètre
+ </summary>
+	<param name="pActiviteCode">Code de l'activité</param>
+	<returns>L'activité correspondant au code</returns>
+	<remarks>Créée le 06/03/2013 par : Jean-François Enond</remarks>
+</member><member name="M:LeulOutils.Parametres_Generaux.Activites.getListeInstancesConfirmationEnvoiAuto">
+	<summary>
+ Renvoie la liste des activités
+ </summary>
+	<returns>oListeActivite</returns>
+	<remarks>
+ Créée le 07/02/2011 par : Céline Barbarit
+ Modifiée le 29/11/2011 par Alexandre THOMAS - ajout de la propriete WinproVersionMajor</remarks>
+</member><member name="M:LeulOutils.Parametres_Generaux.Activites.Ajouter">
+	<summary>
+ Permet d'ajouter des données dans la table Activites
+ </summary>
+	<remarks>
+ Créée le 09/03/2011 par Romain MARQUOIS
+ Modifiée le 29/11/2011 par Alexandre THOMAS - ajout de la propriete WinproVersionMajor</remarks>
+</member><member name="M:LeulOutils.Parametres_Generaux.Activites.Modifier">
+	<summary>
+ Permet de modifier des données de la table Activites
+ </summary>
+	<remarks>
+ Créée le 09/03/2011 par Romain MARQUOIS
+ Modifiée le 29/11/2011 par Alexandre THOMAS - ajout de la propriete WinproVersionMajor</remarks>
+</member><member name="M:LeulOutils.Parametres_Generaux.Activites.Supprimer">
+	<summary>
+ Permet de supprimer des données de la table Activites
+ </summary>
+	<remarks>Créée le 10/03/2011</remarks>
+</member><member name="M:LeulOutils.Parametres_Generaux.Activites.Verification_Suppression">
+	<summary>
+ Permet de vérifier si l'enregistrement en cours de suppression est référencé dans d'autres tables
+ </summary>
+	<returns></returns>
+	<remarks>Créée le 28/03/2011 par Romain MARQUOIS</remarks>
+</member><member name="M:LeulOutils.Parametres_Generaux.Activites.getListeInstances">
+	<summary>
+ Recupère la liste des activités sans ODB
+ </summary>
+	<returns>
+ Une liste d'objet Activites avec leurs données
+ </returns>
+	<remarks>
+ Créée le 20/02/2013 par : JF Enond
+ </remarks>
+</member><member name="M:LeulOutils.Parametres_Generaux.Activites.getListeActivites">
+	<summary>
+ Recherche la liste des activités
+ </summary>
+	<returns>liste des activités trouvées</returns>
+	<remarks>
+ Créée le 06/03/2013 par : JF Enond
+ </remarks>
+</member><member name="M:LeulOutils.Parametres_Generaux.Activites.getListeActivites(LeulOutils.Outils.LeulOutils.eActivite)">
+	<summary>
+ Recherche la liste des activités passées en paramètre
+ </summary>
+	<param name="pActiviteCode">Code de l'activité</param>
+	<returns>liste des activités trouvées</returns>
+	<remarks>
+ Créée le 06/03/2013 par : JF Enond
+ </remarks>
+</member><member name="M:LeulOutils.Parametres_Generaux.Activites.#ctor(System.Byte,System.String,System.Int32,System.Boolean,System.String,System.Byte)">
+	<summary>
+ Constructeur correspondant aux données de la table Activites
+ </summary>
+	<param name="pbytActiviteCode"></param>
+	<param name="pstrActiviteLibelle"></param>
+	<param name="pintCouleur"></param>
+	<remarks>
+ Créé le 23/02/2011 par Romain MARQUOIS
+ Modifiée le 29/11/2011 par Alexandre THOMAS - ajout de la propriete WinproVersionMajor</remarks>
+</member><member name="F:LeulOutils.Parametres_Generaux.Ventilations_Comptes_Comptabilite._Intercalaire_ID">
+	<summary>
+ Identifiant de la table CouleurIntercalaire
+ </summary>
+	<remarks>Crée le 23/02/2011 par Romain MARQUOIS</remarks>
+</member><member name="F:LeulOutils.Parametres_Generaux.Ventilations_Comptes_Comptabilite._Systeme_Tri_ID">
+	<summary>
+ Identifiant de la table Systemes_Tris
+ </summary>
+	<remarks>Crée le 08/11/2011 par Alexandre THOMAS</remarks>
+</member><member name="M:LeulOutils.Parametres_Generaux.Ventilations_Comptes_Comptabilite.getInstanceSysteme(System.Int16,System.String,System.String)">
+	<summary>
+ Procédure qui permet de récuper la gamme d'une activité et d'un système donné
+ </summary>
+	<param name="pshtActiviteCode"></param>
+	<param name="pstrSystemeCode"></param>
+	<param name="pstrBase"></param>
+	<returns>Ventilations_Comptes_Comptabilite</returns>
+	<remarks>Créée le 09/04/2009 par : Céline Barbarit
+ Modifiée le 21/01/2010 par : Céline Barbarit - Modification de la connexion
+ Modifiée le 12/04/2010 par : Céline Barbarit - Ajout de l'identifiant de la table [Systemes_Lancements]
+ Modifiée le 08/11/2011 par Alexandre THOMAS - Ajout de l'identifiant de la table [Systemes_Tris]</remarks>
+</member><member name="M:LeulOutils.Parametres_Generaux.Ventilations_Comptes_Comptabilite.Ajouter">
+	<summary>
+ Permet d'ajouter des données dans la table Ventilations_Comptes_Comptabilite
+ </summary>
+	<remarks>Créée le 08/03/2011 par Romain MARQUOIS</remarks>
+ moidifiée le 08/11/2011 par Alexandre THOMAS - ajout du champ Systeme_Tri_ID dans la requête
+
+</member><member name="M:LeulOutils.Parametres_Generaux.Ventilations_Comptes_Comptabilite.Modifier">
+	<summary>
+ Permet de modifier des données de la table Ventilations_Comptes_Comptabilite
+ </summary>
+	<remarks>Créée le 10/03/2011 par Romain MARQUOIS
+ Modifiée le 08/11/2011 par Alexandre THOMAS - ajout du champ Systeme_Tri_ID dans la requete </remarks>
+</member><member name="M:LeulOutils.Parametres_Generaux.Ventilations_Comptes_Comptabilite.Supprimer">
+	<summary>
+ Permet de supprimer des données de la table Ventilations_Comptes_Comptabilite
+ </summary>
+	<remarks>Créée le 10/03/2011 par Romain MARQUOIS</remarks>
+</member><member name="M:LeulOutils.Parametres_Generaux.Ventilations_Comptes_Comptabilite.getListeInstances">
+	<summary>
+ Récupère une liste de ventilations comptes compta
+ </summary>
+	<returns>
+ Une liste d'objet Ventilations_Comptes_Comptabilite avec leurs données
+ Une liste d'objet vide en cas d'erreur
+ </returns>
+	<remarks>Créée le 08/03/2011 par Romain MARQUOIS
+ Modifiée le 08/11/2011 par Alexandre THOMAS - ajout de l'identifiant de la table [Systemes_Tris]</remarks>
+</member><member name="M:LeulOutils.Parametres_Generaux.Ventilations_Comptes_Comptabilite.#ctor(System.Int32,System.Int16,System.String,System.String,System.Int32,System.String,System.Boolean,System.Int32,System.Boolean,System.String,System.Int32,System.Boolean,System.Int32,System.Int32,System.Int32)">
+	<summary>
+ Constructeur qui permet de récuper les informations du système
+ </summary>
+	<param name="pComptaTable"></param>
+	<param name="pActivitesActiviteCode"></param>
+	<param name="pComptaSystemeArticle"></param>
+	<param name="pComptaCouleur"></param>
+	<param name="pComptaTVACode"></param>
+	<param name="pComptaCompte"></param>
+	<param name="pSystemeNegoce"></param>
+	<param name="pSystemeDelaiFabrication"></param>
+	<param name="pSystemeFabricationLeul"></param>
+	<param name="pSystemeChargeAlu"></param>
+	<param name="pColonnesInfoColonneID"></param>
+	<remarks>
+ Créée le 05/06/2009 par : Céline Barbarit
+ Modifiée le 12/04/2010 par : Céline Barbarit - Ajout de l'identifiant de la table [Systemes_Lancements]
+ Modifié le 03/08/2011 par Romain MARQUOIS - Ajout de l'objet Intercalaire
+ Modifiée le 08/11/2011 par Alexandre THOMAS - ajout de l'objet SystemesTris
+ </remarks>
+</member>
+</members>
+</doc>
